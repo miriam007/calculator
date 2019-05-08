@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
 import Result from './components/Result';
+import Clock from './components/Clock';
 import { runInThisContext } from 'vm';
 
 class App extends Component {
@@ -64,6 +65,7 @@ class App extends Component {
           <Result result={this.state.result}/>
           <Button onClick={this.onClick}/>
         </div>
+        <Clock/>
       </div>
     )
   }
