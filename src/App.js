@@ -4,6 +4,8 @@ import './App.css';
 import Button from './components/Button';
 import Result from './components/Result';
 import Clock from './components/Clock';
+import Cat from './components/Cat';
+import Graph from './components/Graph';
 import { runInThisContext } from 'vm';
 
 class App extends Component {
@@ -59,13 +61,15 @@ class App extends Component {
   render() {
     return(
       <div>
+        <Clock/>
+        <Graph/>
+        {/* <Cat/> */}
         <div className='calc'>
           <h1>Calculator</h1>
           <img src='http://diysolarpanelsv.com/images/joker-batman-clipart-4.png'/>
           <Result result={this.state.result}/>
           <Button onClick={this.onClick}/>
         </div>
-        <Clock/>
       </div>
     )
   }
