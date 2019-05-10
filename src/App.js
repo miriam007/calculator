@@ -4,8 +4,9 @@ import './App.css';
 import Button from './components/Button';
 import Result from './components/Result';
 import Clock from './components/Clock';
-import Cat from './components/Cat';
+// import Cat from './components/Cat';
 import Graph from './components/Graph';
+import Timer from './components/Timer';
 import { runInThisContext } from 'vm';
 
 class App extends Component {
@@ -62,8 +63,8 @@ class App extends Component {
     return(
       <div>
         <Clock/>
+        <Timer/>
         <Graph/>
-        {/* <Cat/> */}
         <div className='calc'>
           <h1>Calculator</h1>
           <img src='http://diysolarpanelsv.com/images/joker-batman-clipart-4.png'/>
